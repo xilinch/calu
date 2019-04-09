@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:gravity="center"
+    android:background="@mipmap/splash_cqssc"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="稳健"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:id="@+id/ll_update"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sf.DarkCalculator.CustomProgressWithPercentView
+            android:id="@+id/percent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+        </com.sf.DarkCalculator.CustomProgressWithPercentView>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_update_text"
+            android:gravity="center_vertical"
+            android:text="正在升级中...."
+            android:textColor="@color/color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
